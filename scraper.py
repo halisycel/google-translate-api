@@ -16,8 +16,8 @@ def PrintException():
 
 
 def listToString(s):
-    str1 = " "
-    return (str1.join(s))
+    _str = " "
+    return (_str.join(s))
 
 
 chrome_options = Options()
@@ -35,7 +35,7 @@ def main(source_text, config):
     for i in range(5):
         try:
             element = browser.find_element_by_css_selector(
-                "#yDmH0d > c-wiz > div > div.WFnNle > c-wiz > div.OlSOob > c-wiz > div.ccvoYb > div.AxqVh > div.OPPzxe > c-wiz.P6w8m.BDJ8fb.BLojaf > div.dePhmb > div > div.J0lOec > span.VIiyi")
+                "#yDmH0d > c-wiz > div > div.WFnNle > c-wiz > div.OlSOob > c-wiz > div.ccvoYb > div.AxqVh > div.OPPzxe > c-wiz.P6w8m.BDJ8fb.BLojaf > div.dePhmb > div > div.J0lOec")
 
             result = ""
             for t in element.text:
